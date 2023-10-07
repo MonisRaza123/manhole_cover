@@ -23,7 +23,7 @@ to curb these acts of petty thievery leading to unfortunate
 fatalities.
 
 ## Proposed Solution
-<img src="system_block.jpeg">
+<img src="images/system_block.jpeg" align="center" width="500">
 The suggested model is represented in three sections:
 
 1. **LoRa end-devices:** The end devices are composed of sensors capable of
@@ -41,4 +41,19 @@ on a web interface or sent to the municipal authorities.
 |<img src="images/node_block.png">|<img src="images/At gateway.jpeg">|
 |:--:|:--:|
 |*Manhole(End Node)*|*Gateway*|
+
+## Six Box Model
+The following is the list of requirements for the proposed solution as per the 'Six box Model' for embedded systems:
+- Input sensor to detect the status of the manhole cover.
+- Wireless technology for transferring sensor information.
+- Cloud server acting as the host and storage for the required data.
+- Microcontroller to process and control the node and gateway.
+- Power supply for the node and gateway.
+- Output devices to access the monitoring of the manhole covers.
+
+|1. INPUT- Flex sensor is used as the input sensor to detect the status of the manhole cover by bending at different angles. The resistance of the sensor changes with change in bending angle thereby facilitating the detection of the presence/absence of the cover.|<img src="images/flex-sensor.jpg" align="right" width="300">|
+|:--|--:|
+|2. COMMUNICAITON- LoRa communication is used as the preferred communication technology between the sensor node and the gateway because: i) Internet connectivity is not a viable option for the application. ii) LoRa is ideal for low bandwidth battery operated systems as it consumes minimal power |<img src="images/lora.jpg" align="right" width="300">|
+|3. HOST & STORAGE- Blynk IOT serves as the cloud service provider. It stores and hosts the cover status of multiple node devices centrally.|<img src="" align="right" width="300">|
+
  
