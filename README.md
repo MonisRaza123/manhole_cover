@@ -23,7 +23,7 @@ to curb these acts of petty thievery leading to unfortunate
 fatalities.
 
 ## Proposed Solution
-<img src="">
+<img src="system_block.jpeg">
 The suggested model is represented in three sections:
 
 1. **LoRa end-devices:** The end devices are composed of sensors capable of
@@ -37,6 +37,8 @@ to an internet access point.
 data is uploaded to a cloud-based server and displayed
 on a web interface or sent to the municipal authorities.
 
-## Block Diagram System representation
-
+## Block Diagram Representation
+|<img src="images/node_block.png">|<img src="images/At gateway.jpeg">|
+|:--:|:--:|
+|*Manhole(End Node)*|*Gateway*|
  
