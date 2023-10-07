@@ -54,6 +54,35 @@ The following is the list of requirements for the proposed solution as per the '
 |1. INPUT- Flex sensor is used as the input sensor to detect the status of the manhole cover by bending at different angles. The resistance of the sensor changes with change in bending angle thereby facilitating the detection of the presence/absence of the cover.|<img src="images/flex-sensor.jpg" align="right" width="300">|
 |:--|--:|
 |2. COMMUNICAITON- LoRa communication is used as the preferred communication technology between the sensor node and the gateway because: i) Internet connectivity is not a viable option for the application. ii) LoRa is ideal for low bandwidth battery operated systems as it consumes minimal power |<img src="images/lora.jpg" align="right" width="300">|
-|3. HOST & STORAGE- Blynk IOT serves as the cloud service provider. It stores and hosts the cover status of multiple node devices centrally.|<img src="" align="right" width="300">|
+|3. HOST & STORAGE- Blynk IOT serves as the cloud service provider. It stores and hosts the cover status of multiple node devices centrally which can then be fetched remotely from anyplace and anytime.|<img src="images/blynk.png" align="right" width="300">|
+|4. POWER SUPPLY- The end nodes are powered by a battery and as such need to be charged periodically.The TP4056 is a complete constant-current/constant-voltage linear charger for single-cell lithium-ion batteries. Its SOP package and low external component count make the TP4056 ideally suited for portable applications. The gateway device is powered by a 5V DC adapter|<img src="images/tp4056.jpeg" width="300">|
+
+
+|<span style="font-weight:normal">5. MICROCONTROLLERS- ATMEGA168 is the microcontroller of choice for the end node as it consumes very less power and has just the right amount of features to cater to the needs of the end device. ESP32 is used as the microcontroller at the gateway as it requires internet connectivity serving as the internet access point for multiple end nodes. The communication between the end-nodes and gateway is done using Lora transceivers as stated earlier</span>|<img src="images/atmega 168.jpeg" align="centre" width="400">|<img src="images/esp32.jpeg" align="centre" width="400">|
+|:--|--|--:|
+
+
+## Circuit Design
+
+### Schematics
+|<img src="images/end node.png">|
+|:--:|
+|*Schematic for End Node*|
+
+|<img src="images/master.png">|
+|:--:|
+|*Schematic for Master Node/Gateway*|
+
+### Board Layouts
+|<img src="images/node pcb.png" width="500">|
+|:--:|
+|*END NODE board layout*|
+
+|<img src="images/master pcb.png" width="500">|
+|:--:|
+|*MASTER NODE board layout*|
+
+
+
 
  
